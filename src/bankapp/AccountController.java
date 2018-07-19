@@ -33,6 +33,7 @@ public class AccountController {
         } catch (Exception e) {
 
             System.out.println("Wrong account number!");
+            System.out.println("Wrong number please check again");
 
         }
 
