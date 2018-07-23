@@ -67,7 +67,7 @@ public class AccountManager {
     public void withdraw(long accountNo, double amount) {
 
         if (getAccount(accountNo) instanceof Withdrawal) {
-            System.out.println("Right");
+            
             Withdrawal withdrawal = (Withdrawal) getAccount(accountNo);
             double balance = getAccount(accountNo).getBalance();
             double currentBalance = withdrawal.withdraw(balance, amount);
